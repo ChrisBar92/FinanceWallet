@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --first-color: #f9f9f9;
+  --second-color: #14161f;
+  --border-color: rgba(0, 0, 0, 0.2);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -12,8 +18,8 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  color: #14161f;
-  background-color: #f9f9f9;
+  color: var(--second-color);
+  background-color: var(--first-color);
 }
 
 .header {
@@ -66,7 +72,7 @@ main {
   margin: 0rem 2rem;
   padding: 3rem;
   width: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
 }
 .transactions .income-area__header,
 .transactions .income-area .transaction-amount {
@@ -82,7 +88,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--border-color);
 }
 .transactions .transaction:last-child {
   border-bottom: none;
@@ -98,7 +104,7 @@ main {
   background: none;
   border: none;
   font-size: 1.8rem;
-  color: #14161f;
+  color: var(--second-color);
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -109,7 +115,7 @@ main {
 .options {
   padding: 8rem 4rem;
   width: 50rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
 }
 .options__available-money {
   margin-top: -1rem;
@@ -126,16 +132,16 @@ main {
 }
 .options__controls button {
   padding: 1.2rem 2rem;
-  color: #14161f;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: var(--second-color);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   background: none;
   cursor: pointer;
   transition: color 0.3s, background-color 0.3s;
 }
 .options__controls button:hover {
-  color: #f9f9f9;
-  background-color: #14161f;
+  color: var(--first-color);
+  background-color: var(--second-color);
 }
 .options__style-selection {
   display: flex;

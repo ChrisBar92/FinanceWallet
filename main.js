@@ -115,17 +115,15 @@ const deleteAllTransaction = () => {
 }
 
 const changeStyleToLight = () => {
-    console.log('jasno')
-	root.style.setProperty('$first-color', '#14161F')
-	root.style.setProperty('$second-color', '#f9f9f9')
-	root.style.setProperty('$border-color', 'rgba(0,0,0,.2')
+	root.style.setProperty('--first-color', '#f9f9f9')
+	root.style.setProperty('--second-color', '#14161F')
+	root.style.setProperty('--border-color', 'rgba(0,0,0,.2')
 }
 
 const changeStyleToDark = () => {
-    console.log('ciemno')
-	root.style.setProperty('$first-color', '#f9f9f9')
-	root.style.setProperty('$second-color', '#14161F')
-	root.style.setProperty('$border-color', 'rgba(255,255,255,.4')
+	root.style.setProperty('--first-color', '#14161F')
+	root.style.setProperty('--second-color', '#f9f9f9')
+	root.style.setProperty('--border-color', 'rgba(255,255,255,.4')
 }
 
 addTransactionBtn.addEventListener('click', showPanel)
